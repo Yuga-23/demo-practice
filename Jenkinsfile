@@ -8,7 +8,7 @@ pipeline{
     stages{
         stage('checkout git repo'){
             steps{
-                git branch: 'main',url: 'https://github.com/Yuga-23/demo-practice.git',credentialsId('github-credentials')
+                git branch: 'main',url: 'https://github.com/Yuga-23/demo-practice.git',credentialsId:'github-credentials'
 
             }
         }
